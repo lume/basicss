@@ -1,0 +1,47 @@
+{
+	"name": "@lume/basicss",
+	"version": "0.0.0",
+	"description": "Better default CSS styling for the browser's builtin elements.",
+	"license": "MIT",
+	"homepage": "http://github.com/lume/basicss#readme",
+	"type": "module",
+	"main": "src/index.css",
+	"exports COMMENT:": "This removes 'dist' from import statements, as well as replaces the 'main' field. See https://github.com/nodejs/node/issues/14970#issuecomment-571887546",
+	"exports": {
+		".": "./src/index.css",
+		"./": "./src/"
+	},
+	"scripts": {
+		"LUME SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
+		"test": "TODO: visual snapshot testing",
+		"test:debug": "TODO: visual snapshot testing",
+		"prettier": "lume prettier",
+		"prettier:check": "lume prettierCheck",
+		"release:patch": "lume releasePatch",
+		"release:minor": "lume releaseMinor",
+		"release:major": "lume releaseMajor",
+		"version": "lume versionHook",
+		"postversion": "lume postVersionHook",
+		"OTHER SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": ""
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"@lume/cli": "^2.1.2",
+		"prettier": "^1.19.1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+ssh://git@github.com/lume/basicss.git"
+	},
+	"bugs": {
+		"url": "https://github.com/lume/basicss/issues"
+	},
+	"keywords": [
+		"html",
+		"css",
+		"styles",
+		"pure-css",
+		"gui",
+		"ui"
+	]
+}
