@@ -1,6 +1,6 @@
 {
 	"name": "@lume/basicss",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Better default CSS styling for the browser's builtin elements.",
 	"license": "MIT",
 	"homepage": "http://github.com/lume/basicss#readme",
