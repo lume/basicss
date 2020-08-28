@@ -14,8 +14,8 @@
 	"scripts": {
 		"LUME SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
 		"clean": "echo Nothing to clean.",
-		"test": "TODO: visual snapshot testing",
-		"test:debug": "TODO: visual snapshot testing",
+		"test": "echo TODO: visual snapshot testing",
+		"test:debug": "echo TODO: visual snapshot testing",
 		"prettier": "lume prettier",
 		"prettier:check": "lume prettierCheck",
 		"release:patch": "lume releasePatch",
