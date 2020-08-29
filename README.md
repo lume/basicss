@@ -14,6 +14,10 @@ browser's default HTML elements. It gives you better basic defaults so that a
 basic web page with plain HTML doesn't look so bland and plain out of the
 box.
 
+## Demo
+
+https://codepen.io/trusktr/pen/wvGzjgV
+
 <!-- TODO
 ## Install and Setup
 ## Basic Usage
