@@ -27,7 +27,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@lume/cli": "^2.1.3",
+		"@lume/cli": "^3.0.0",
 		"prettier": "^1.19.1"
 	},
 	"repository": {
