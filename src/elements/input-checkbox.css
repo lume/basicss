@@ -1,0 +1,82 @@
+@import '../shared/colors.css';
+
+/* Default values: */
+input[type='checkbox' i] {
+	--checkbox-size: 14px;
+	--checkbox-color: var(--cornflowerblue);
+
+	--checkbox-checkmark-color: var(--checkbox-color);
+	--checkbox-checkmark-scale: 1;
+	--checkbox-checkmark-stroke-width: calc(0.1275 * var(--checkbox-size));
+
+	--checkbox-border-color: var(--checkbox-color);
+	--checkbox-border-width: calc(0.08 * var(--checkbox-size));
+	--checkbox-border-radius: 15%;
+
+	--checkbox-background-color: var(--checkbox-color);
+	--checkbox-background-opacity: 0.15;
+}
+
+input[type='checkbox' i] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	font-size: unset;
+	box-sizing: border-box;
+	position: relative;
+	width: var(--checkbox-size);
+	height: var(--checkbox-size);
+	margin: 3px 4px 0px 3px;
+}
+
+input[type='checkbox' i][disabled] {
+	opacity: 0.5;
+}
+
+input[type='checkbox' i]:focus {
+	outline: none;
+	outline-offset: 0;
+	border-width: calc(2 * var(--checkbox-border-width_));
+}
+
+input[type='checkbox' i]:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%) rotate(45deg) scale(0);
+	height: calc(var(--checkbox-checkmark-scale) * 55%);
+	width: calc(var(--checkbox-checkmark-scale) * 28%);
+	border-bottom: calc(var(--checkbox-checkmark-scale) * var(--checkbox-checkmark-stroke-width)) solid
+		rgba(var(--checkbox-checkmark-color), 1);
+	border-right: calc(var(--checkbox-checkmark-scale) * var(--checkbox-checkmark-stroke-width)) solid
+		rgba(var(--checkbox-checkmark-color), 1);
+	transition: 0.1s all;
+}
+
+input[type='checkbox' i]:checked:before {
+	transform: translate(-50%, -60%) rotate(45deg) scale(1);
+}
+
+input[type='checkbox' i]:after {
+	content: '';
+	box-sizing: content-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	width: calc(100% - var(--checkbox-border-width));
+	height: calc(100% - var(--checkbox-border-width));
+	background: rgba(var(--checkbox-background-color), var(--checkbox-background-opacity));
+	border: 0 solid rgba(var(--checkbox-border-color), 1);
+	border-width: var(--checkbox-border-width);
+	border-radius: var(--checkbox-border-radius);
+}
+
+input[type='checkbox' i]:focus:after,
+input[type='checkbox' i]:not([disabled]):hover:after {
+	border-width: calc(1.5 * var(--checkbox-border-width));
+}
