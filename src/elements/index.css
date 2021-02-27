@@ -1,1 +1,3 @@
-@import './input-checkbox.css';
+@import './body.css';
+@import './button.css';
+@import './input/index.css';

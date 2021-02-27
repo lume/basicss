@@ -1,0 +1,105 @@
+@import '../../shared/colors.css';
+
+/* Various inputs use styling from button. */
+@import '../button.css';
+
+/*
+ * These are default values and styles for checkbox and radio inputs, which
+ * have much of the same implementation, with some variation. These values are
+ * default for checkbox, and radio modifies values.
+ *
+ * The input-checkbox.css and input-radio.css files contain only the small
+ * differences.
+ */
+
+input[type='checkbox' i],
+input[type='radio' i] {
+	--checkable-size: 14px;
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-color: 20, 30, 40;`. */
+	--checkable-color: var(--cornflowerblue);
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-mark-color: 20, 30, 40;`. */
+	--checkable-mark-color: var(--checkable-color);
+	--checkable-mark-scale: 1;
+	--checkable-mark-stroke-width: calc(0.1275 * var(--checkable-size));
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-border-color: 20, 30, 40;`. */
+	--checkable-border-color: var(--checkable-color);
+	--checkable-border-width: calc(0.08 * var(--checkable-size));
+	--checkable-border-radius: 15%;
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-background-color: 20, 30, 40;`. */
+	--checkable-background-color: var(--checkable-color);
+	--checkable-background-opacity: 0.15;
+}
+
+input[type='checkbox' i],
+input[type='radio' i] {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+
+	font-size: unset;
+	box-sizing: border-box;
+	position: relative;
+	width: var(--checkable-size);
+	height: var(--checkable-size);
+	margin: 3px 4px 0px 3px;
+}
+
+input[type='checkbox' i][disabled],
+input[type='radio' i][disabled] {
+	opacity: 0.5;
+}
+
+input[type='checkbox' i]:focus,
+input[type='radio' i]:focus {
+	outline: none;
+	outline-offset: 0;
+}
+
+input[type='checkbox' i]:before,
+input[type='radio' i]:before {
+	--checkable-transform--: translate(-50%, -50%) rotate(45deg);
+	content: '';
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transition: 0.1s all;
+	transform: var(--checkable-transform--) scale(0);
+	border-bottom: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
+		rgba(var(--checkable-mark-color), 1);
+	border-right: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
+		rgba(var(--checkable-mark-color), 1);
+}
+
+input[type='checkbox' i]:checked:before,
+input[type='radio' i]:checked:before {
+	transform: var(--checkable-transform--) scale(1);
+}
+
+input[type='checkbox' i]:after,
+input[type='radio' i]:after {
+	content: '';
+	box-sizing: content-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	width: calc(100% - var(--checkable-border-width));
+	height: calc(100% - var(--checkable-border-width));
+	background: rgba(var(--checkable-background-color), var(--checkable-background-opacity));
+	border: 0 solid rgba(var(--checkable-border-color), 1);
+	border-width: var(--checkable-border-width);
+	border-radius: var(--checkable-border-radius);
+}
+
+input[type='checkbox' i]:focus:after,
+input[type='checkbox' i]:not([disabled]):hover:after,
+input[type='radio' i]:focus:after,
+input[type='radio' i]:not([disabled]):hover:after {
+	border-width: calc(1.5 * var(--checkable-border-width));
+}
