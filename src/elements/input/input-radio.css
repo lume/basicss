@@ -2,12 +2,12 @@
 @import './input.shared.css';
 
 /* The extra "[type]" is needed here to force this to be more specific than the rule imported from input.shared.css. :\ */
-input[type][type='radio' i] {
+input[type='radio' i] {
 	/* Radios are circles. */
 	--checkable-border-radius: 100%;
 }
 
-input[type][type='radio' i]:before {
+input[type='radio' i]:before {
 	border-top: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
 		rgba(var(--checkable-mark-color), 1);
 	border-left: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
