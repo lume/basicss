@@ -7,7 +7,7 @@ input[type][type='radio' i] {
 	--checkable-border-radius: 100%;
 }
 
-* input[type][type='radio' i]:before {
+input[type][type='radio' i]:before {
 	border-top: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
 		rgba(var(--checkable-mark-color), 1);
 	border-left: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
