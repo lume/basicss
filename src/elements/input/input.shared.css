@@ -12,8 +12,7 @@
  * differences.
  */
 
-input[type='checkbox' i],
-input[type='radio' i] {
+:root {
 	--checkable-size: 14px;
 
 	/** The value has to be an RGB number triplet, f.e. `--checkable-color: 20, 30, 40;`. */
@@ -61,6 +60,7 @@ input[type='radio' i]:focus {
 
 input[type='checkbox' i]:before,
 input[type='radio' i]:before {
+	/* vars ending with -- are "private". */
 	--checkable-transform--: translate(-50%, -50%) rotate(45deg);
 	content: '';
 	display: block;
