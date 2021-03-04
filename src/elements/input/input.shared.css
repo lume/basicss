@@ -35,6 +35,28 @@
 
 input[type='checkbox' i],
 input[type='radio' i] {
+	--checkable-size: var(--checkable-size);
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-color: 20, 30, 40;`. */
+	--checkable-color: var(--checkable-color);
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-mark-color: 20, 30, 40;`. */
+	--checkable-mark-color: var(--checkable-mark-color);
+	--checkable-mark-scale: var(--checkable-mark-scale);
+	--checkable-mark-stroke-width: var(--checkable-mark-stroke-width);
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-border-color: 20, 30, 40;`. */
+	--checkable-border-color: var(--checkable-border-color);
+	--checkable-border-width: var(--checkable-border-width);
+	--checkable-border-radius: var(--checkable-border-radius);
+
+	/** The value has to be an RGB number triplet, f.e. `--checkable-background-color: 20, 30, 40;`. */
+	--checkable-background-color: var(--checkable-background-color);
+	--checkable-background-opacity: var(--checkable-background-opacity);
+}
+
+input[type='checkbox' i],
+input[type='radio' i] {
 	-moz-appearance: none;
 	-webkit-appearance: none;
 	appearance: none;
