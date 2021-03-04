@@ -1,6 +1,7 @@
 @import '../shared/colors.css';
 
 input[type='button' i],
+input[type='reset' i],
 input[type='submit' i],
 input::-webkit-file-upload-button,
 input[type='color' i],
@@ -14,6 +15,7 @@ button {
 }
 
 input[type='button' i],
+input[type='reset' i],
 input[type='submit' i],
 input::-webkit-file-upload-button,
 input[type='color' i],
@@ -31,6 +33,7 @@ button {
 }
 
 input[type='button' i]:hover,
+input[type='reset' i]:hover,
 input[type='submit' i]:hover,
 input::-webkit-file-upload-button:hover,
 input[type='color' i]:hover,
@@ -39,6 +42,7 @@ button:hover {
 }
 
 input[type='button' i]:focus,
+input[type='reset' i]:focus,
 input[type='submit' i]:focus,
 input::-webkit-file-upload-button:focus,
 input[type='color' i]:focus,
@@ -48,6 +52,7 @@ button:focus {
 }
 
 input[type='button' i]:active,
+input[type='reset' i]:active,
 input[type='submit' i]:active,
 input::-webkit-file-upload-button:active,
 input[type='color' i]:active,
