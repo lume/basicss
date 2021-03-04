@@ -27,7 +27,7 @@ input[type='radio' i] {
 	/** The value has to be an RGB number triplet, f.e. `--checkable-border-color: 20, 30, 40;`. */
 	--checkable-border-color: var(--checkable-color);
 	--checkable-border-width: calc(0.08 * var(--checkable-size));
-	--checkable-border-radius: 15%;
+	--checkable-border-radius: 100%;
 
 	/** The value has to be an RGB number triplet, f.e. `--checkable-background-color: 20, 30, 40;`. */
 	--checkable-background-color: var(--checkable-color);
@@ -61,8 +61,8 @@ input[type='radio' i]:focus {
 
 input[type='checkbox' i]:before,
 input[type='radio' i]:before {
-	/* vars ending with -- are "private". */
-	--checkable-transform--: translate(-50%, -50%) rotate(45deg);
+	/* vars ending with -- are "private", not intended for end users. */
+	--checkable-transform--: translate(-50%, -50%);
 	content: '';
 	display: block;
 	position: absolute;

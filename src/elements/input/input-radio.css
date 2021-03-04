@@ -8,6 +8,7 @@ input[type='radio' i] {
 }
 
 input[type='radio' i]:before {
+	--checkable-transform--: translate(-50%, -50%);
 	border-top: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
 		rgba(var(--checkable-mark-color), 1);
 	border-left: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
