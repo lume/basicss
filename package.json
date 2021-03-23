@@ -25,7 +25,7 @@
 		"version": "lume versionHook",
 		"postversion": "lume postVersionHook",
 		"OTHER SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
-		"examples": "live-server --open=playground"
+		"examples": "live-server --open=playground --no-css-inject"
 	},
 	"dependencies": {},
 	"devDependencies": {
