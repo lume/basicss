@@ -1,6 +1,3 @@
-/* Checkboxes and radios share much of the same code. */
-@import './input.shared.css';
-
 /* The extra "[type]" is needed here to force this to be more specific than the rule imported from input.shared.css. :\ */
 input[type='radio' i] {
 	/* Radios are circles. */

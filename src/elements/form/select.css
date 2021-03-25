@@ -1,0 +1,130 @@
+:root {
+	--line-height: 1.5;
+	--form-element-spacing-vertical: 0.75rem;
+	--form-element-spacing-horizontal: 1rem;
+	--form-element-border-width: 1px;
+	--block-round: 0.25rem;
+	--text: #415462;
+	--input-border: #c8d1d8;
+	--text-weight: 400;
+	--form-element-weight: var(--text-weight);
+	--mark-text: #2c3d49;
+	--muted-background: #edf0f3;
+	--icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(40, 138, 106, 0.999)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
+	--icon-invalid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(185, 70, 70, 0.999)' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='10'%3E%3C/circle%3E%3Cline x1='12' y1='8' x2='12' y2='12'%3E%3C/line%3E%3Cline x1='12' y1='16' x2='12.01' y2='16'%3E%3C/line%3E%3C/svg%3E");
+	--icon-chevron: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgba(115, 130, 140, 0.999)' opacity='0.66' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+	--spacing-typography: 1.5rem;
+	--form-element-outline-width: 3px;
+	--primary-focus: rgba(16, 149, 193, 0.125);
+	--input-focus: var(--primary-focus);
+}
+
+select {
+	font-family: inherit; /* 1 */
+	font-size: 1rem; /* 1 */
+	line-height: var(--line-height); /* 1 */
+	margin: 0; /* 2 */
+}
+
+/* Change the inconsistent appearance in IE (opinionated) */
+
+select {
+	display: block;
+	width: 100%;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
+	vertical-align: middle;
+}
+
+/* Remove the inheritance of text transform in Edge, Firefox, and IE */
+select {
+	text-transform: none;
+}
+
+select {
+	border: var(--form-element-border-width) solid var(--input-border);
+	border-radius: var(--block-round);
+	outline: none;
+	background-color: var(--input-background);
+	color: var(--text);
+	font-weight: var(--form-element-weight);
+}
+
+select::placeholder,
+select::-webkit-input-placeholder {
+	color: var(--muted-text);
+	opacity: 1;
+}
+
+select:active,
+select:focus {
+	border-color: var(--input-hover-border);
+	background-color: var(--input-hover-background);
+}
+
+select[readonly],
+select[disabled] {
+	border-color: var(--muted-border);
+	box-shadow: none;
+}
+
+select[readonly] ~ label,
+select[disabled] ~ label {
+	color: var(--muted-text);
+}
+
+select[readonly]:active,
+select[disabled]:active,
+select[readonly]:focus,
+select[disabled]:focus {
+	box-shadow: none;
+}
+
+select[disabled]:not([type='reset']):not([type='submit']):not([type='button']) {
+	background-color: var(--muted-background);
+}
+
+select[disabled] {
+	opacity: 0.66;
+}
+
+select[aria-invalid] {
+	padding-right: 2rem;
+	background-position: center right 0.75rem;
+	background-repeat: no-repeat;
+	background-size: 1rem auto;
+}
+
+select[aria-invalid='false'] {
+	background-image: var(--icon-valid);
+}
+
+select[aria-invalid='true'] {
+	background-image: var(--icon-invalid);
+}
+
+select {
+	margin-bottom: var(--spacing-typography);
+}
+
+select:focus {
+	box-shadow: 0 0 0 var(--form-element-outline-width) var(--input-focus);
+}
+
+select::-ms-expand {
+	border: 0;
+	background-color: transparent;
+}
+
+select:not([multiple]):not([size]) {
+	padding-right: calc(var(--form-element-spacing-horizontal) + 1.5rem);
+	background-image: var(--icon-chevron);
+	background-position: center right 0.75rem;
+	background-repeat: no-repeat;
+	background-size: 1rem auto;
+}

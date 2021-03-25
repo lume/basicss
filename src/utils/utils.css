@@ -1,0 +1,17 @@
+[inline] {
+	display: inline;
+}
+
+[inline-block] {
+	display: inline-block;
+}
+
+/* Change the inconsistent appearance in IE (opinionated) */
+::-ms-expand {
+	display: none;
+}
+
+button,
+summary {
+	cursor: pointer;
+}
