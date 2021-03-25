@@ -4,7 +4,7 @@ import through2 from 'through2'
 
 var extract = function() {
 	return gulp
-		.src('src/elements/select.shared.css')
+		.src('src/elements/form/form.shared-is-test.css')
 		.pipe(
 			through2.obj(function(file, _, cb) {
 				if (file.isBuffer()) {
