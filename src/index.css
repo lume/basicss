@@ -1,2 +1,6 @@
-@import './clickables.css';
+@import './shared/variables.css';
+@import './shared/colors.css';
+
+@import './utils/utils.css';
+
 @import './elements/index.css';

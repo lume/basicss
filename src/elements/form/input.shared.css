@@ -1,7 +1,22 @@
-@import '../../shared/colors.css';
+/* Clickables */
 
-/* Various inputs use styling from button. */
-@import '../button.css';
+input[type='checkbox' i],
+input[type='radio' i],
+input[type='color' i],
+input[type='submit' i],
+input[type='button' i],
+input[type='date' i],
+input[type='time' i],
+input[type='datetime-local' i],
+input[type='month' i],
+input[type='week' i],
+input::-webkit-calendar-picker-indicator,
+input::-webkit-file-upload-button,
+input[type='range' i],
+input[type='reset' i],
+input[type='file' i] {
+	cursor: pointer;
+}
 
 /*
  * These are default values and styles for checkbox and radio inputs, which

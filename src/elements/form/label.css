@@ -1,0 +1,10 @@
+label {
+	user-select: none;
+	cursor: pointer;
+}
+
+/* label > textarea,
+label > input,
+label > select {
+	margin-top: var(--spacing-form-element);
+} */
