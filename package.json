@@ -29,7 +29,7 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@lume/cli": "^0.8.0",
+		"@lume/cli": "^0.9.0",
 		"live-server": "^1.2.1",
 		"prettier": "^1.19.1"
 	},
