@@ -25,13 +25,17 @@
 		"version": "lume versionHook",
 		"postversion": "lume postVersionHook",
 		"OTHER SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
-		"examples": "live-server --open=playground --no-css-inject"
+		"examples": "live-server --open=playground --no-css-inject",
+		"gulp": "gulp"
 	},
 	"dependencies": {},
 	"devDependencies": {
 		"@lume/cli": "^0.9.0",
 		"live-server": "^1.2.1",
-		"prettier": "^1.19.1"
+		"prettier": "^1.19.1",
+		"gulp": "^4.0.2",
+		"css-selector-extract": "^4.0.0",
+		"through2": "^4.0.2"
 	},
 	"repository": {
 		"type": "git",
