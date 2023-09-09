@@ -25,12 +25,12 @@
 		"version": "lume versionHook",
 		"postversion": "lume postVersionHook",
 		"OTHER SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
-		"examples": "live-server --open=playground --no-css-inject"
+		"examples": "five-server --open=playground --no-css-inject"
 	},
 	"dependencies": {},
 	"devDependencies": {
 		"@lume/cli": "^0.9.0",
-		"live-server": "^1.2.1",
+		"five-server": "^0.3.1",
 		"prettier": "^1.19.1"
 	},
 	"repository": {
