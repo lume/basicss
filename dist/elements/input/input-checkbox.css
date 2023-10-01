@@ -1,0 +1,17 @@
+/* Checkboxes and radios share much of the same code. */
+@import './input.shared.css';
+
+input[type='checkbox' i] {
+	/* Checkboxes are boxes with rounded corners. */
+	--checkable-border-radius: 15%;
+}
+
+input[type='checkbox' i]:before {
+	--checkable-transform--: translate(-50%, -62%) rotate(45deg);
+	border-top: none;
+	border-left: none;
+	border-radius: 0;
+	background: none;
+	height: calc(var(--checkable-mark-scale) * 55%);
+	width: calc(var(--checkable-mark-scale) * 28%);
+}

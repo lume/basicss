@@ -1,0 +1,10 @@
+@import './input.shared.css';
+
+input[type='color' i] {
+	width: auto;
+	padding: 4px 8px;
+}
+
+input[type='color' i]::-webkit-color-swatch-wrapper {
+	min-width: 40px;
+}

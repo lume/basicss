@@ -1,0 +1,20 @@
+/* Checkboxes and radios share much of the same code. */
+@import './input.shared.css';
+
+/* The extra "[type]" is needed here to force this to be more specific than the rule imported from input.shared.css. :\ */
+input[type='radio' i] {
+	/* Radios are circles. */
+	--checkable-border-radius: 100%;
+}
+
+input[type='radio' i]:before {
+	--checkable-transform--: translate(-50%, -50%);
+	border-top: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
+		rgba(var(--checkable-mark-color), 1);
+	border-left: calc(var(--checkable-mark-scale) * var(--checkable-mark-stroke-width)) solid
+		rgba(var(--checkable-mark-color), 1);
+	border-radius: 100%;
+	background: rgba(var(--checkable-mark-color), 1);
+	height: calc(var(--checkable-mark-scale) * 40%);
+	width: calc(var(--checkable-mark-scale) * 40%);
+}
