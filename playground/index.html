@@ -1,137 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Playground</title>
+		<style>
+			@import '../src/index.css';
+			@import '../src/extra/utils.css';
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Playground</title>
-	<style>
-		@import '../src/index.css';
-		@import '../src/extra/utils.css';
+			body {
+				font-family: sans-serif;
+			}
+		</style>
+	</head>
 
-		body {
-			font-family: sans-serif;
-		}
-
-	</style>
-</head>
-
-<body>
-
-
-	<h1>LUME Basicss Playground</h1>
-
-	<fieldset checkboxes inline-block>
-		<legend>checkboxes</legend>
-		<span>
-			<input type="checkbox" id="cb1" />
-			<label for="cb1">check me</label>
-		</span>
-		<br />
-		<label checked>
-			<input type="checkbox" checked />
-			uncheck me
-		</label>
-		<br />
-		<span>
-			<input type="checkbox" id="cb2" disabled />
-			<label for="cb2">you can't check me</label>
-		</span>
-		<br />
-		<label>
-			<input type="checkbox" checked disabled />
-			you can't uncheck me
-		</label>
-		<br />
-	</fieldset>
-
-	<fieldset radios inline-block>
-		<legend>radios</legend>
-		<span>
-			<input name="radios" type="radio" id="r1" />
-			<label for="r1">choose me</label>
-		</span>
-		<br />
-		<label checked>
-			<input name="radios" type="radio" />
-			choose me
-		</label>
-		<br />
-		<span>
-			<input name="radios" type="radio" id="r2" disabled />
-			<label for="r2">you can't choose me</label>
-		</span>
-		<br />
-		<label>
-			<input name="radios" type="radio" checked disabled />
-			I'm chosen, but you won't be able choose me later
-		</label>
-		<br />
-	</fieldset>
-
-	<hr />
-	<h2>Headings</h2>
-
-	<h1>This is an h1 heading</h1>
-	<h1>h1 heading <small>With Small Text</small></h1>
-	<h2>This is an h2 heading</h2>
-	<h3>This is an h3 heading</h3>
-	<h4>This is an h4 heading</h4>
-	<h5>This is an h5 heading</h5>
-	<h6>This is an h6 heading</h6>
-
-	<hr />
-	<h3>Inputs</h3>
-
-	<!-- Lots of pseudo classes to handle: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#ui_pseudo-classes -->
-
-	<input type="color" /><br />
-	<input type="submit" value="input type submit" /><br />
-	<input type="button" value="input type button" /><br />
-	<input type="date" /><br />
-	<input type="time" /><br />
-	<input type="datetime-local" /><br />
-	<input type="month" /><br />
-	<input type="week" /><br />
-	<input type="range" /><br />
-	<input type="reset" /><br />
-	<input type="file" /><br />
-
-	<hr />
-	<h3>Buttons</h3>
-
-	<button>Click me</button><br />
-
-	<hr />
-	<h3>Definition lists</h3>
-
-	<dl>
-		<dt>Foo Bar</dt>
-		<dd>This is a description of Foo Bar.</dd>
-		<dt>Lorem Ipsum</dt>
-		<dd>This is a description of Lorem Ipsum.</dd>
-		<dt>Cats</dt>
-		<dd>Cats a furry animals that humans are known to make memes of.</dd>
-		<dt>Dogs</dt>
-		<dd>Dogs are a human's "best friend" and by default they love to chase cats.</dd>
-	</dl>
-
-	<hr />
-	<h3>Details Dropdown</h3>
-
-	<details>
-		<summary>This is the summary. (Click to open)</summary>
-
-		This is the content inside of the drop down. We can put anything in here. For example Here are some checkboxes.
-
-		<br />
+	<body>
+		<h1>LUME Basicss Playground</h1>
 
 		<fieldset checkboxes inline-block>
 			<legend>checkboxes</legend>
 			<span>
-				<input type="checkbox" id="cb3" />
-				<label for="cb3">check me</label>
+				<input type="checkbox" id="cb1" />
+				<label for="cb1">check me</label>
 			</span>
 			<br />
 			<label checked>
@@ -140,8 +31,8 @@
 			</label>
 			<br />
 			<span>
-				<input type="checkbox" id="cb4" disabled />
-				<label for="cb4">you can't check me</label>
+				<input type="checkbox" id="cb2" disabled />
+				<label for="cb2">you can't check me</label>
 			</span>
 			<br />
 			<label>
@@ -150,102 +41,205 @@
 			</label>
 			<br />
 		</fieldset>
-	</details>
 
-	<hr />
-	<h2>Tables</h2>
-
-	<table class="table table-striped table-bordered table-condensed">
-		<thead>
-			<tr>
-				<th>#</th>
-				<th>First Name</th>
-				<th>Tables</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>1</td>
-				<td>Britton</td>
-				<td>This one is bordered and condensed</td>
-			</tr>
-			<tr>
-				<td>2</td>
-				<td>Zachary</td>
-				<td>It has less table cell padding</td>
-			</tr>
-		</tbody>
-	</table>
-
-	<hr />
-	<h2>Block Quotes</h2>
-
-	<blockquote>
-		FSCJ ranks 4<sup>th</sup> in the nation in grand total (5,744), and in all disciplines granted among public,
-		four-year institutions granting associate degrees
-		<small>Community College Week</small>
-	</blockquote>
-
-	<hr />
-	<h2>Lists</h2>
-
-	<ul>
-		<li>Normal Unordered List</li>
-		<li>
-			Can Also Work
-			<ul>
-				<li>With Nested Children</li>
-			</ul>
-		</li>
-		<li>Adds Bullets to Page</li>
-	</ul>
-	<ol>
-		<li>Normal Ordered List</li>
-		<li>
-			Can Also Work
-			<ol>
-				<li>With Nested Children</li>
-			</ol>
-		</li>
-		<li>Adds Bullets to Page</li>
-	</ol>
-
-	<hr />
-	<h2>Forms</h2>
-
-	<h3>form box</h3>
-
-	<form>
-		<fieldset>
-			<legend>Legend</legend>
-			<div class="form-group">
-				<label for="exampleEmail">Email address</label>
-				<input type="text" class="form-control" id="exampleEmail" placeholder="Enter email" />
-				<p class="help-block">Example block-level help text here.</p>
-			</div>
-			<div class="form-group">
-				<label for="examplePassword">Password</label>
-				<input type="password" class="form-control" id="examplePassword" placeholder="Password" />
-				<p class="help-block">Example block-level help text here.</p>
-			</div>
-			<div class="checkbox">
-				<input type="checkbox" id="exampleCheckbox" />
-				<label for="exampleCheckbox"> Check me out</label>
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
+		<fieldset radios inline-block>
+			<legend>radios</legend>
+			<span>
+				<input name="radios" type="radio" id="r1" />
+				<label for="r1">choose me</label>
+			</span>
+			<br />
+			<label checked>
+				<input name="radios" type="radio" />
+				choose me
+			</label>
+			<br />
+			<span>
+				<input name="radios" type="radio" id="r2" disabled />
+				<label for="r2">you can't choose me</label>
+			</span>
+			<br />
+			<label>
+				<input name="radios" type="radio" checked disabled />
+				I'm chosen, but you won't be able choose me later
+			</label>
+			<br />
 		</fieldset>
-	</form>
 
-	<h3>single-line form</h3>
+		<hr />
+		<h2>Headings</h2>
 
-	<form class="form-inline">
-		<input type="text" class="form-control" id="inlineEmail" placeholder="Email" />
-		<input type="password" class="form-control" id="inlinePassword" placeholder="Password" />
-		<input type="checkbox" id="inlineCheckbox" name="inlineCheckbox" />
-		<label for="inlineCheckbox">Remember me</label>
-		<button type="submit" class="btn btn-default">Sign in</button>
-	</form>
+		<h1>This is an h1 heading</h1>
+		<h1>h1 heading <small>With Small Text</small></h1>
+		<h2>This is an h2 heading</h2>
+		<h3>This is an h3 heading</h3>
+		<h4>This is an h4 heading</h4>
+		<h5>This is an h5 heading</h5>
+		<h6>This is an h6 heading</h6>
 
-</body>
+		<hr />
+		<h3>Inputs</h3>
 
+		<!-- Lots of pseudo classes to handle: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input#ui_pseudo-classes -->
+
+		<input type="color" /><br />
+		<input type="submit" value="input type submit" /><br />
+		<input type="button" value="input type button" /><br />
+		<input type="date" /><br />
+		<input type="time" /><br />
+		<input type="datetime-local" /><br />
+		<input type="month" /><br />
+		<input type="week" /><br />
+		<input type="range" /><br />
+		<input type="reset" /><br />
+		<input type="file" /><br />
+
+		<hr />
+		<h3>Buttons</h3>
+
+		<button>Click me</button><br />
+
+		<hr />
+		<h3>Definition lists</h3>
+
+		<dl>
+			<dt>Foo Bar</dt>
+			<dd>This is a description of Foo Bar.</dd>
+			<dt>Lorem Ipsum</dt>
+			<dd>This is a description of Lorem Ipsum.</dd>
+			<dt>Cats</dt>
+			<dd>Cats a furry animals that humans are known to make memes of.</dd>
+			<dt>Dogs</dt>
+			<dd>Dogs are a human's "best friend" and by default they love to chase cats.</dd>
+		</dl>
+
+		<hr />
+		<h3>Details Dropdown</h3>
+
+		<details>
+			<summary>This is the summary. (Click to open)</summary>
+
+			This is the content inside of the drop down. We can put anything in here. For example Here are some checkboxes.
+
+			<br />
+
+			<fieldset checkboxes inline-block>
+				<legend>checkboxes</legend>
+				<span>
+					<input type="checkbox" id="cb3" />
+					<label for="cb3">check me</label>
+				</span>
+				<br />
+				<label checked>
+					<input type="checkbox" checked />
+					uncheck me
+				</label>
+				<br />
+				<span>
+					<input type="checkbox" id="cb4" disabled />
+					<label for="cb4">you can't check me</label>
+				</span>
+				<br />
+				<label>
+					<input type="checkbox" checked disabled />
+					you can't uncheck me
+				</label>
+				<br />
+			</fieldset>
+		</details>
+
+		<hr />
+		<h2>Tables</h2>
+
+		<table class="table table-striped table-bordered table-condensed">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>First Name</th>
+					<th>Tables</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Britton</td>
+					<td>This one is bordered and condensed</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Zachary</td>
+					<td>It has less table cell padding</td>
+				</tr>
+			</tbody>
+		</table>
+
+		<hr />
+		<h2>Block Quotes</h2>
+
+		<blockquote>
+			FSCJ ranks 4<sup>th</sup> in the nation in grand total (5,744), and in all disciplines granted among public,
+			four-year institutions granting associate degrees
+			<small>Community College Week</small>
+		</blockquote>
+
+		<hr />
+		<h2>Lists</h2>
+
+		<ul>
+			<li>Normal Unordered List</li>
+			<li>
+				Can Also Work
+				<ul>
+					<li>With Nested Children</li>
+				</ul>
+			</li>
+			<li>Adds Bullets to Page</li>
+		</ul>
+		<ol>
+			<li>Normal Ordered List</li>
+			<li>
+				Can Also Work
+				<ol>
+					<li>With Nested Children</li>
+				</ol>
+			</li>
+			<li>Adds Bullets to Page</li>
+		</ol>
+
+		<hr />
+		<h2>Forms</h2>
+
+		<h3>form box</h3>
+
+		<form>
+			<fieldset>
+				<legend>Legend</legend>
+				<div class="form-group">
+					<label for="exampleEmail">Email address</label>
+					<input type="text" class="form-control" id="exampleEmail" placeholder="Enter email" />
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="form-group">
+					<label for="examplePassword">Password</label>
+					<input type="password" class="form-control" id="examplePassword" placeholder="Password" />
+					<p class="help-block">Example block-level help text here.</p>
+				</div>
+				<div class="checkbox">
+					<input type="checkbox" id="exampleCheckbox" />
+					<label for="exampleCheckbox"> Check me out</label>
+				</div>
+				<button type="submit" class="btn btn-default">Submit</button>
+			</fieldset>
+		</form>
+
+		<h3>single-line form</h3>
+
+		<form class="form-inline">
+			<input type="text" class="form-control" id="inlineEmail" placeholder="Email" />
+			<input type="password" class="form-control" id="inlinePassword" placeholder="Password" />
+			<input type="checkbox" id="inlineCheckbox" name="inlineCheckbox" />
+			<label for="inlineCheckbox">Remember me</label>
+			<button type="submit" class="btn btn-default">Sign in</button>
+		</form>
+	</body>
 </html>
