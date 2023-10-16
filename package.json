@@ -27,7 +27,6 @@
 		"OTHER SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
 		"examples": "five-server --open=playground --no-css-inject"
 	},
-	"dependencies": {},
 	"devDependencies": {
 		"@lume/cli": "^0.9.0",
 		"five-server": "^0.3.1",
