@@ -6,17 +6,12 @@
 	"homepage": "http://github.com/lume/basicss#readme",
 	"type": "module",
 	"main": "src/index.css",
-	"exports COMMENT:": "This removes 'dist' from import statements, as well as replaces the 'main' field. See https://github.com/nodejs/node/issues/14970#issuecomment-571887546",
-	"exports": {
-		".": "./src/index.css",
-		"./": "./src/"
-	},
 	"scripts": {
 		"start": "npm run examples",
 		"LUME SCRIPTS XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX": "",
 		"clean": "echo Nothing to clean.",
-		"test": "echo TODO: visual snapshot testing",
-		"test:debug": "echo TODO: visual snapshot testing",
+		"test": "echo TODO: visual snapshot testing with @web/test-runner",
+		"test:watch": "echo TODO: visual snapshot testing with @web/test-runner",
 		"prettier": "lume prettier",
 		"prettier:check": "lume prettierCheck",
 		"release:patch": "lume releasePatch",
