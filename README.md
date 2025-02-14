@@ -1,4 +1,4 @@
-# @lume/basicss
+![Image](https://github.com/user-attachments/assets/d82d931e-6611-4fdc-8edf-7b1d456c3bcc)
 
 Better default CSS styling for the browser's builtin elements.
 
