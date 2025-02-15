@@ -1,4 +1,4 @@
-![Image](https://github.com/user-attachments/assets/d82d931e-6611-4fdc-8edf-7b1d456c3bcc)
+![Image](https://github.com/user-attachments/assets/0b2c94d5-5e20-4560-a864-473704cc70b8)
 
 Better default CSS styling for the browser's builtin elements.
 
